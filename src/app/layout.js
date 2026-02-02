@@ -24,6 +24,14 @@ export const metadata = {
     description: "Join the best gym in India. Transform your body with top-tier equipment and expert trainers.",
     url: "https://golden-fitness-gym.vercel.app",
     siteName: "Golden Fitness",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Golden Fitness Gym Interior",
+      },
+    ],
     locale: "en_IN",
     type: "website",
   },
