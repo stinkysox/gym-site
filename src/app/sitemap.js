@@ -1,5 +1,7 @@
 export default function sitemap() {
-  const baseUrl = "https://golden-fitness-gym.vercel.app";
+  const baseUrl = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000";
 
   return [
     {

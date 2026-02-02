@@ -1,10 +1,14 @@
 export default function robots() {
+  const baseUrl = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000";
+
   return {
     rules: {
       userAgent: "*",
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://golden-fitness-gym.vercel.app/sitemap.xml",
+    sitemap: `${baseUrl}/sitemap.xml`,
   };
 }
